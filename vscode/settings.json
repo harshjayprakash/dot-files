@@ -1,34 +1,29 @@
 {
-    "editor.rulers": [90],
-    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    /* VSCode Specific Settings */
+    "editor.bracketPairColorization.enabled": false,
+    "editor.rulers": [ 90 ],
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.inlayHints.enabled": "off",
+    "editor.stickyScroll.scrollWithEditor": false,
 
     "extensions.ignoreRecommendations": true,
 
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
-
-    "workbench.colorTheme": "Nord",
-    "workbench.layoutControl.enabled": false,
-    "workbench.productIconTheme": "icons-carbon",
-    
     "telemetry.telemetryLevel": "off",
-    
-    "[css]": {
-        "editor.defaultFormatter": "stylelint.vscode-stylelint"
-    },
 
-    "[python]": {
-        "editor.rulers": [72, 79],
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
+    "window.commandCenter": false,
+    "window.restoreWindows": "none",
+
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Palenight (Mild Contrast)",
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.tree.enableStickyScroll": false,
+
+    /* Python Specific Settings */
     "python.analysis.typeCheckingMode": "strict",
     "python.analysis.autoImportCompletions": true,
-    "pylint.args": [
-        "--disable=missing-module-docstring",
-        "--disable=missing-function-docstring",
-        "--disable=missing-class-docstring"
-    ],
+
+    /* C/C++ Specific Settings */
+    "clangd.path": "clangd",
 }
